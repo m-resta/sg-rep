@@ -1,0 +1,5 @@
+iwslt17_data/*
+models/
+__pycache__/
+train_logs/
+env/
