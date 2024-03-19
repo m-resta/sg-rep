@@ -1,0 +1,7 @@
+transformers==4.24.0
+torch==1.13.1
+datasets
+evaluate
+sacrebleu
+tensorboardX
+pyenchant
