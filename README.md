@@ -1,4 +1,4 @@
-# Code for Self-generated Replay Memories for Continual Neural Machine Translation
+# Code for "Self-generated Replay Memories for Continual Neural Machine Translation"
 
 ## Requirements
 
@@ -38,6 +38,7 @@ The first argument is the model subdirectory name, the second are the CUDA_VISIB
 - Self-Replay 
     - `./selfrep_cill_rp20.sh selfreplay_rp20 0`
 
+Note: The scripts are set to use the iwslt2017 dataset. To use the unpc dataset, change the `--dataset_name` flag to `unpc` in the scripts and the language pairs accordingly.
 
 ## Changing default parameters
 
@@ -57,9 +58,9 @@ will run the EWC training with specified arguments.
 | -------------         | ------------- |
 | model_save_path       | Where to save the models |
 | dataset_save_path     | Folder of the datasets. If no data is present it will be downloaded |
-| dataset_name          | Name of the dataset: iwslt2017 or unpc |
+| dataset_name          | Name of the dataset: `iwslt2017` or `unpc` |
 | train_epochs          | Epochs for training for all tasks. |
-| lang_pairs            | List of translation pairs for the various experiences e.g en-fr en-ro |
+| lang_pairs            | List of translation pairs for the various experiences e.g `en-fr en-ro` |
 | replay_memory         | Number of samples for the memory |
 | pairs_in_experience   | Number of translation pairs in each experience |
 | metric_for_best_model | Evaluation metric to select the best model|
@@ -68,11 +69,11 @@ will run the EWC training with specified arguments.
 | eval_steps            | Evaluate every steps|
 | fp16                  | Use float16 precision |
 | early_stopping        | Patience parameter |
-| ewc_lambda            | Lambda parameter for ewc strategy |
-| agem_sample_size      | Sise of the Agem samples during optimization |
+| ewc_lambda            | Lambda parameter for EWC strategy |
+| agem_sample_size      | Sise of the AGEM samples during optimization |
 | agem_pattern_per_exp  | Number of examples to sample from to populate agem memory buffer |
 | logging_dir           | Directory to store logs. |
-| bidirectional | defaults to True. If True it will include also the reverse direction e.g. with --lang_pairs en-fr it will train also on fr-en |
+| bidirectional | Defaults to `True`. If `True` it will include also the reverse direction e.g. with --lang_pairs `en-fr `it will train also on `fr-en` |
 
 Check individual strategies for more options.
 
