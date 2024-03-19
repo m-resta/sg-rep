@@ -73,7 +73,7 @@ will run the EWC training with specified arguments.
 | agem_sample_size      | Sise of the AGEM samples during optimization |
 | agem_pattern_per_exp  | Number of examples to sample from to populate agem memory buffer |
 | logging_dir           | Directory to store logs. |
-| bidirectional | Defaults to `True`. If `True` it will include also the reverse direction e.g. with --lang_pairs `en-fr `it will train also on `fr-en` |
+| bidirectional | Defaults to `True`. If `True` it will include also the reverse direction e.g. with `--lang_pairs en-fr `it will train also on `fr-en` |
 
 Check individual strategies for more options.
 
