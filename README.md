@@ -91,4 +91,12 @@ We provide a template Dockerfile to build an image with all the dependencies nee
 If find this code useful, please consider citing our work:
 
 ```
+@misc{resta2024selfgenerated,
+      title={Self-generated Replay Memories for Continual Neural Machine Translation}, 
+      author={Michele Resta and Davide Bacciu},
+      year={2024},
+      eprint={2403.13130},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
